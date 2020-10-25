@@ -1,5 +1,5 @@
 # 计G202 2020322092 杨昀昊
---
+
 *实验三：学生选课系统*
 --
 ## 一、实验目的
@@ -44,35 +44,35 @@
  #### 如图：
  #### 数据库（建表语句见 四、7）：
  *teacher表* <br>
-![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/teachertable.png) <br><br>
+![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/teachertable.png) <br>
 *course表* <br>
-![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/coursetable.png) <br><br>
+![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/coursetable.png) <br>
 *student表* <br>
-![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/studenttable.png) <br><br>
+![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/studenttable.png) <br>
 *stu_course表* <br>
-![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/stu_ctable.png) <br><br>
+![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/stu_ctable.png) <br>
 
  ##### 流程图
- ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E6%B5%81%E7%A8%8B%E5%9B%BE.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E6%B5%81%E7%A8%8B%E5%9B%BE.png) <br>
 
  ##### 包图
- ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E5%8C%85%E5%9B%BE.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E5%8C%85%E5%9B%BE.png) <br>
 
  ##### model包类图（含继承、多态、对象的属性和方法等）
- ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/model%E5%8C%85.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/model%E5%8C%85.png) <br>
 
 
  ##### Dao包所含类图
- ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/Dao%E5%8C%85.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/Dao%E5%8C%85.png) <br>
 
  ##### Iml接口实现类图
- ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E5%AF%B9%E5%BA%94Dao%E7%9A%84%E6%8E%A5%E5%8F%A3%E6%96%B9%E6%B3%95.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E5%AF%B9%E5%BA%94Dao%E7%9A%84%E6%8E%A5%E5%8F%A3%E6%96%B9%E6%B3%95.png) <br>
 
  ##### service包类图
- ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/serive%E5%8C%85.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/serive%E5%8C%85.png) <br>
 
  ##### 关键方法tPrintResult的时序图
- ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/tPrintResult%E6%97%B6%E5%BA%8F%E5%9B%BE%E9%83%A8%E5%88%86.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/tPrintResult%E6%97%B6%E5%BA%8F%E5%9B%BE%E9%83%A8%E5%88%86.png) <br>
 
 
 ## 四、关键代码
@@ -306,31 +306,31 @@ ENGINE=InnoDB
 ## 五、系统运行截图
 
   #### 以学生身份进入
-  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/stuStart.gif) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/stuStart.gif) <br>
 
   ##### 选课
-  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/selectclass.gif) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/selectclass.gif) <br>
   
   ##### 退课
-  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/exitclass.gif) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/exitclass.gif) <br>
 
 
   #### 以教师身份进入
-  ![]( https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/teachlogin.gif) <br><br>
+  ![]( https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/teachlogin.gif) <br>
 
   ##### 教师基础功能
-  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/basefun.gif) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/basefun.gif) <br>
  
   ##### 变更课程部分信息
-  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/changeclass.gif) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/changeclass.gif) <br>
 
   ##### 以”修仙者“学生身份进入，看到课程已经变更时间和地点
-  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/changeresult.gif) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/changeresult.gif) <br>
     
   
 ## 七、感想与体会
-   >1.本次未按照软件开发流程进行，编写过程中异常困难，困难在于总有新想法加入，每次更改都是牵一发而动全身。
-   >2.学习并巩固了java知识点，如：封装、继承、多态等
-   >3.学习并巩固了sql语句
-   >4.碰到困难多查字典、多上网浏览找解决方法
-   >5.下次一定要优先划定功能，做好系统需求分析，这次java实验占用了很多很多高数作业的时间（*难过(；′⌒`)*）。*都是自己一会儿一个想法，导致总是编写不完2333*
+   >1.本次未按照软件开发流程进行，编写过程中异常困难，困难在于总有新想法加入，每次更改都是牵一发而动全身。<br>
+   >2.学习并巩固了java知识点，如：封装、继承、多态等。 <br>
+   >3.学习并巩固了sql语句。<br>
+   >4.碰到困难多查字典、多上网浏览找解决方法。 <br>
+   >5.下次一定要优先划定功能，做好系统需求分析，这次java实验占用了很多很多高数作业的时间（*难过(；′⌒`)*）。*都是自己一会儿一个想法，导致总是编写不完2333*<br>
