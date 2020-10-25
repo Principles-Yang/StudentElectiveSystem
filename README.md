@@ -1,6 +1,6 @@
 # 计G202 2020322092 杨昀昊
 --
-** *实验三：学生选课系统* **
+*实验三：学生选课系统*
 --
 ## 一、实验目的
  1.初步了解分析系统需求，从学生选课角度了解系统中的实体及其关系，学会定义类中的属性以及方法；<br>
@@ -19,13 +19,13 @@
 
 
 ## 二、实验内容
-##### 逻辑与业务要求:
+#### 逻辑与业务要求:
   说明：学校有“人员”，分为“教师”和“学生”，教师教授“课程”，学生选择“课程”。<br>
   --从简化系统考虑，每名教师仅教授一门课程，每门课程的授课教师也仅有一位，每名学生选仅选一门课程。--
   本实验结果现已变成：每个学生可选多门课程，数据库自增长<br>
   每名教师仅教授一门课程，每门课程的授课教师也仅有一位，*但教师有权查看学生信息，并可以修改上课地点和时间。*
 
-##### 对象:（具体请看设计）
+#### 对象:（具体请看设计）
     >人员：编号、姓名、性别
     >教师：编号、姓名、性别、所授课程、课程编号、登录账户、登录密码
     >学生：编号、姓名、性别、所选课程、登录账户、登录密码
@@ -43,13 +43,13 @@
 ## 三、实验设计
  #### 如图：
  #### 数据库（建表语句见 四、7）：
- *teacher表*
+ *teacher表* <br>
 ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/teachertable.png) <br><br>
-*course表*
+*course表* <br>
 ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/coursetable.png) <br><br>
-*student表*
+*student表* <br>
 ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/studenttable.png) <br><br>
-*stu_course表*
+*stu_course表* <br>
 ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/stu_ctable.png) <br><br>
 
  ##### 流程图
@@ -58,7 +58,7 @@
  ##### 包图
  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E5%8C%85%E5%9B%BE.png) <br><br>
 
-##### model包类图（含继承、多态、对象的属性和方法等）
+ ##### model包类图（含继承、多态、对象的属性和方法等）
  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/model%E5%8C%85.png) <br><br>
 
 
@@ -68,7 +68,7 @@
  ##### Iml接口实现类图
  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E5%AF%B9%E5%BA%94Dao%E7%9A%84%E6%8E%A5%E5%8F%A3%E6%96%B9%E6%B3%95.png) <br><br>
 
-##### service包类图
+ ##### service包类图
  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/serive%E5%8C%85.png) <br><br>
 
  ##### 关键方法tPrintResult的时序图
@@ -157,7 +157,8 @@ public class Teacher extends Person{
     }
    ```
 
-    4.嵌入查询
+  4.嵌入查询
+    
  ```Java
      @Override
     public void getStuCourse(String username) {
@@ -328,8 +329,8 @@ ENGINE=InnoDB
     
   
 ## 七、感想与体会
-   1.本次未按照软件开发流程进行，编写过程中异常困难，困难在于总有新想法加入，每次更改都是牵一发而动全身。
-   2.学习并巩固了java知识点，如：封装、继承、多态等
-   3.学习并巩固了sql语句
-   4.碰到困难多查字典、多上网浏览找解决方法
-   5.下次一定要优先划定功能，做好系统需求分析，这次java实验占用了很多很多高数作业的时间（*难过(；′⌒`)*）。*都是自己一会儿一个想法，导致总是编写不完2333*
+   >1.本次未按照软件开发流程进行，编写过程中异常困难，困难在于总有新想法加入，每次更改都是牵一发而动全身。
+   >2.学习并巩固了java知识点，如：封装、继承、多态等
+   >3.学习并巩固了sql语句
+   >4.碰到困难多查字典、多上网浏览找解决方法
+   >5.下次一定要优先划定功能，做好系统需求分析，这次java实验占用了很多很多高数作业的时间（*难过(；′⌒`)*）。*都是自己一会儿一个想法，导致总是编写不完2333*
