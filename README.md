@@ -1,4 +1,7 @@
 # 计G202 2020322092 杨昀昊
+--
+** *实验三：学生选课系统* **
+--
 ## 一、实验目的
  1.初步了解分析系统需求，从学生选课角度了解系统中的实体及其关系，学会定义类中的属性以及方法；<br>
  2.掌握面向对象的类设计方法（属性、方法）；<br>
@@ -40,29 +43,36 @@
 ## 三、实验设计
  #### 如图：
  #### 数据库（建表语句见 四、7）：
-
+ *teacher表*
+![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/teachertable.png) <br><br>
+*course表*
+![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/coursetable.png) <br><br>
+*student表*
+![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/studenttable.png) <br><br>
+*stu_course表*
+![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/stu_ctable.png) <br><br>
 
  ##### 流程图
- ![](hes-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/BasicUml.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E6%B5%81%E7%A8%8B%E5%9B%BE.png) <br><br>
 
  ##### 包图
- ![](https://githules-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/Pc-cpu-harddisk.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E5%8C%85%E5%9B%BE.png) <br><br>
 
 ##### model包类图（含继承、多态、对象的属性和方法等）
- ![](https://gub.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/Pc-cpu-harddisk.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/model%E5%8C%85.png) <br><br>
 
 
  ##### Dao包所含类图
- ![](https://github.coYang/JavaTest2-Simulation-Program-of-PC/blob/main/Pc-cpu-harddisk.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/Dao%E5%8C%85.png) <br><br>
 
  ##### Iml接口实现类图
- ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/Pc-cpu-harddisk.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/%E5%AF%B9%E5%BA%94Dao%E7%9A%84%E6%8E%A5%E5%8F%A3%E6%96%B9%E6%B3%95.png) <br><br>
 
 ##### service包类图
- ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/Pc-cpu-harddisk.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/serive%E5%8C%85.png) <br><br>
 
  ##### 关键方法tPrintResult的时序图
- ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/Pc-cpu-harddisk.png) <br><br>
+ ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/tPrintResult%E6%97%B6%E5%BA%8F%E5%9B%BE%E9%83%A8%E5%88%86.png) <br><br>
 
 
 ## 四、关键代码
@@ -295,26 +305,26 @@ ENGINE=InnoDB
 ## 五、系统运行截图
 
   #### 以学生身份进入
-  ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/result.png) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/stuStart.gif) <br><br>
 
   ##### 选课
-  ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/result.png) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/selectclass.gif) <br><br>
   
   ##### 退课
-  ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/result.png) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/exitclass.gif) <br><br>
 
 
   #### 以教师身份进入
-  ![]( https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/result1.png) <br><br>
+  ![]( https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/teachlogin.gif) <br><br>
 
   ##### 教师基础功能
-  ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/result.png) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/basefun.gif) <br><br>
  
   ##### 变更课程部分信息
-  ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/result.png) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/changeclass.gif) <br><br>
 
   ##### 以”修仙者“学生身份进入，看到课程已经变更时间和地点
-  ![](https://github.com/Principles-Yang/JavaTest2-Simulation-Program-of-PC/blob/main/result.png) <br><br>
+  ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/changeresult.gif) <br><br>
     
   
 ## 七、感想与体会
@@ -322,4 +332,4 @@ ENGINE=InnoDB
    2.学习并巩固了java知识点，如：封装、继承、多态等
    3.学习并巩固了sql语句
    4.碰到困难多查字典、多上网浏览找解决方法
-   5.下次一定要优先划定功能，做好系统需求分析，这次java实验占用了很多多高数的作业时间（*难过(；′⌒`)*）。*都是自己一会儿一个想法，导致总是编写不完2333*
+   5.下次一定要优先划定功能，做好系统需求分析，这次java实验占用了很多很多高数作业的时间（*难过(；′⌒`)*）。*都是自己一会儿一个想法，导致总是编写不完2333*
