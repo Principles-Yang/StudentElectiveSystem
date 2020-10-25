@@ -42,7 +42,7 @@
 
 ## 三、实验设计
  #### 如图：
- #### 数据库（建表语句见 四、7）：
+ #### 数据库（建表语句见 四、7）：本次使用的是MariaDB数据库，因为它开源、免费
  *teacher表* <br>
 ![](https://github.com/Principles-Yang/StudentElectiveSystem/blob/master/pic/teachertable.png) <br>
 *course表* <br>
