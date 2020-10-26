@@ -124,11 +124,31 @@ public class Teacher extends Person{
 
 }
    ```
-  3.关键方法tPrintResult（含toString方法的输出）
+   
+   3.JDBC连接（使用Mariadb数据库）
+```Java
+ private static String driver="org.mariadb.jdbc.Driver";
+    private static String url="jdbc:mariadb://localhost:3306/test";
+    private static String user="root";
+    private static String password="mariadb";
+
+    /**
+     * 连接数据库
+     * @throws Exception
+     */
+    public static Connection getCon () throws Exception{
+        Class.forName(driver);
+        //System.out.println("加载");
+        Connection con =DriverManager.getConnection(url, user, password);
+        //System.out.println("连接");
+        return con;
+    }
+   ```
+   
+   
+  4.关键方法tPrintResult（含toString方法的输出）
 ```Java
  public void tPrintResult(String t_name){
-
-            // TODO Auto-generated method stub
             Connection con = null;
             PreparedStatement ps= null;
             ResultSet rs=null;
@@ -148,21 +168,16 @@ public class Teacher extends Person{
                     System.out.println(teacher);
                 }
             } catch (Exception e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-
-
-
     }
    ```
 
-  4.嵌入查询
+  5.嵌入查询
     
  ```Java
      @Override
     public void getStuCourse(String username) {
-        // TODO Auto-generated method stub
         Connection con = null;
         PreparedStatement ps= null;
         ResultSet rs=null;
@@ -191,7 +206,7 @@ public class Teacher extends Person{
     }
  ```
 
- 5.修改课程时间和地点的方法
+ 6.修改课程时间和地点的方法
  ```Java
          @Override
     public void updateCourse(Course course) {
@@ -222,7 +237,7 @@ public class Teacher extends Person{
     }
  ```
 
-  6.多表联查（左嵌入）
+  7.多表联查（左嵌入）
  ```sql
       SELECT s.username,  c.c_id, s.sno, s.name, s.sex , c.c_no,  c.c_name, c.teacher, c.c_pos, c.c_time FROM course c
         LEFT JOIN  stu_course sc ON   sc.c_id= c.c_id
@@ -231,7 +246,7 @@ public class Teacher extends Person{
  ```
 
  
-   7.建库sql语句
+   8.建库sql语句
 
 ##### course表
  ```sql
